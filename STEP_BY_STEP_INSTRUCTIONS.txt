@@ -1,0 +1,67 @@
+================================================================================
+STEP-BY-STEP INSTRUCTIONS - AI Mood-Based Music Generator
+================================================================================
+
+STEP 1: OPEN COMMAND PROMPT OR POWERSHELL
+------------------------------------------
+- Press Windows Key + R
+- Type: cmd
+- Press Enter
+OR
+- Press Windows Key + X
+- Select "Windows PowerShell" or "Terminal"
+
+STEP 2: NAVIGATE TO PROJECT FOLDER
+-----------------------------------
+Copy and paste this command, then press Enter:
+
+    cd C:\Users\user\OneDrive\Desktop\github\AI-201
+
+STEP 3: INSTALL REQUIRED LIBRARIES
+-----------------------------------
+Copy and paste this command, then press Enter:
+
+    python -m pip install -r requirements.txt
+
+If that doesn't work, try this instead:
+
+    py -m pip install -r requirements.txt
+
+Wait for installation to complete (this may take a few minutes).
+
+STEP 4: RUN THE APPLICATION
+----------------------------
+After installation is complete, copy and paste this command:
+
+    python -m streamlit run app.py
+
+Or if that doesn't work:
+
+    py -m streamlit run app.py
+
+STEP 5: USE THE APPLICATION
+----------------------------
+- A browser window will open automatically at http://localhost:8501
+- Click the "📷 Start Camera" button in the sidebar
+- Position your face in front of the camera
+- The app will detect your emotions and play music!
+
+================================================================================
+TROUBLESHOOTING
+================================================================================
+
+If "python" is not recognized:
+- Try using "py" instead
+- Make sure Python is installed from python.org
+
+If installation fails:
+- Make sure you have internet connection
+- Try: python -m pip install --upgrade pip
+- Then try installing again
+
+If camera doesn't work:
+- Check camera permissions
+- Make sure no other app is using the camera
+
+================================================================================
+

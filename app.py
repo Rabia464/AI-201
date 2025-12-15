@@ -108,6 +108,8 @@ def main():
         st.subheader("Visualization")
         show_charts = st.checkbox("Show Charts", value=True)
         chart_window = st.slider("Chart Time Window (minutes)", 1, 30, 5)
+        show_debug = st.checkbox("Show Detection Debug", value=False,
+                                 help="Display raw feature values driving the rule-based detector")
         
         # Data controls
         st.subheader("Data")
@@ -238,6 +240,14 @@ def main():
                 )
             else:
                 st.info("Waiting for face detection...")
+
+            if show_debug:
+                with st.expander("Detection debug"):
+                    feat = emotion_system.get_last_features() if hasattr(emotion_system, "get_last_features") else {}
+                    if feat:
+                        st.json(feat)
+                    else:
+                        st.caption("No features yet. Start camera to see values.")
             
             # Music status
             st.subheader("🎵 Music Status")

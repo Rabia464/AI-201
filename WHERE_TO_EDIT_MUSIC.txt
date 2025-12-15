@@ -1,0 +1,83 @@
+================================================================================
+WHERE TO EDIT MUSIC SETTINGS IN CODE
+================================================================================
+
+1. CHANGE MUSIC FOLDER LOCATION
+   File: app.py
+   Line: 56
+   
+   Current:
+   music_player = MusicPlayer(music_dir="music", mood_mode="change")
+   
+   Change to:
+   music_player = MusicPlayer(music_dir="C:/path/to/your/music", mood_mode="change")
+   
+   OR keep it as "music" (default folder in project directory)
+
+
+2. ADD MORE AUDIO FORMATS
+   File: music_player.py
+   Line: 67
+   
+   Current:
+   audio_extensions = ['.mp3', '.wav', '.ogg']
+   
+   Add more formats:
+   audio_extensions = ['.mp3', '.wav', '.ogg', '.m4a', '.flac']
+
+
+3. CHANGE EMOTION FOLDERS
+   File: music_player.py
+   Line: 30-35
+   
+   Current:
+   self.playlists = {
+       'Happy': [],
+       'Sad': [],
+       'Energetic': [],
+       'Calm': []
+   }
+   
+   To add more emotions, also update:
+   - emotion_model.py (emotion_labels)
+   - data_logger.py (emotions list)
+   - face_detector.py (if needed)
+
+
+4. CHANGE MOOD MAPPING (Which emotion plays which music)
+   File: music_player.py
+   Line: 38-43
+   
+   Current (Change Mood mode):
+   self.mood_change_map = {
+       'Sad': 'Happy',        # If sad, play happy music
+       'Happy': 'Happy',      # If happy, keep playing happy
+       'Energetic': 'Energetic',
+       'Calm': 'Happy'        # If calm, play happy
+   }
+   
+   Example: If you want Sad to play Energetic instead:
+   'Sad': 'Energetic',
+
+
+5. DEFAULT MUSIC MODE
+   File: app.py
+   Line: 56
+   
+   Current:
+   music_player = MusicPlayer(music_dir="music", mood_mode="change")
+   
+   To default to "Match Mood" instead:
+   music_player = MusicPlayer(music_dir="music", mood_mode="match")
+
+
+================================================================================
+QUICK REFERENCE - FILE LOCATIONS
+================================================================================
+
+music_player.py  → All music playback logic
+app.py           → Main app, music folder path (line 56)
+emotion_model.py → Emotion labels (if adding new emotions)
+
+================================================================================
+

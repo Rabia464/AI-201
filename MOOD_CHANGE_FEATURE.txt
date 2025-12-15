@@ -1,0 +1,35 @@
+================================================================================
+NEW FEATURE: MOOD-CHANGING MUSIC MODE
+================================================================================
+
+The app now has TWO music modes:
+
+1. MATCH MOOD (Original Mode)
+   - Plays music that matches your detected emotion
+   - If you're sad → plays sad music
+   - If you're happy → plays happy music
+
+2. CHANGE MOOD (NEW - Default Mode) ✨
+   - Plays positive/energetic music to improve your mood
+   - If you're SAD → plays HAPPY music to cheer you up! 🎉
+   - If you're HAPPY → keeps playing happy music
+   - If you're CALM → plays happy music to energize
+   - If you're ENERGETIC → keeps playing energetic music
+
+HOW TO USE:
+-----------
+1. Open the app
+2. In the sidebar, you'll see "Music Mode" with two options
+3. Select "Change Mood" (default) to get mood-boosting music
+4. Select "Match Mood" if you want music matching your emotion
+5. Start the camera and enjoy!
+
+EXAMPLE:
+--------
+- You look sad → App detects "Sad" → Plays happy/cheerful music to lift your mood! ✨
+- You look happy → App detects "Happy" → Keeps playing happy music to maintain good mood! 😊
+
+The app will show: "Detected: Sad → Playing: Happy (mood boost! ✨)"
+
+================================================================================
+

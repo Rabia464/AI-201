@@ -1,0 +1,111 @@
+================================================================================
+SONG PLAYLIST STRUCTURE GUIDE
+================================================================================
+
+The app uses a folder-based playlist system. You need to organize your music
+files into folders based on emotions.
+
+FOLDER STRUCTURE:
+-----------------
+AI-201/
+└── music/
+    ├── Happy/          ← Put happy/cheerful songs here
+    ├── Sad/            ← Put sad/melancholic songs here
+    ├── Energetic/      ← Put high-energy/fast-paced songs here
+    └── Calm/           ← Put relaxing/peaceful songs here
+
+
+SUPPORTED AUDIO FORMATS:
+------------------------
+✓ .mp3  (Most common)
+✓ .wav  (High quality)
+✓ .ogg  (Compressed)
+
+
+HOW TO ADD SONGS:
+-----------------
+1. Navigate to: C:\Users\user\OneDrive\Desktop\github\AI-201\music\
+
+2. Open the emotion folder you want (e.g., "Happy")
+
+3. Copy your music files into that folder
+
+4. Example:
+   music/
+   └── Happy/
+       ├── song1.mp3
+       ├── song2.mp3
+       └── song3.wav
+
+
+RECOMMENDED SONGS BY EMOTION:
+------------------------------
+
+HAPPY FOLDER (Cheerful, upbeat songs):
+- "Happy" by Pharrell Williams
+- "Walking on Sunshine" by Katrina & The Waves
+- "Can't Stop the Feeling" by Justin Timberlake
+- "Good Vibrations" by The Beach Boys
+- Any upbeat pop, dance, or feel-good songs
+
+SAD FOLDER (Melancholic, emotional songs):
+- "Someone Like You" by Adele
+- "Fix You" by Coldplay
+- "Hurt" by Johnny Cash
+- Slow, emotional ballads
+- Note: In "Change Mood" mode, these won't play when you're sad!
+
+ENERGETIC FOLDER (High-energy, fast-paced):
+- "Eye of the Tiger" by Survivor
+- "Thunder" by Imagine Dragons
+- "We Will Rock You" by Queen
+- Rock, EDM, workout songs
+- Fast tempo, high energy
+
+CALM FOLDER (Relaxing, peaceful):
+- "Weightless" by Marconi Union
+- "Clair de Lune" by Debussy
+- Nature sounds, meditation music
+- Slow, peaceful, ambient music
+
+
+IMPORTANT NOTES:
+----------------
+1. The app will automatically detect songs when you restart it
+2. You can add as many songs as you want to each folder
+3. The app randomly selects a song from the appropriate folder
+4. Songs loop until your emotion changes
+5. If a folder is empty, no music will play for that emotion
+
+
+QUICK SETUP:
+------------
+1. Create folders (if they don't exist):
+   - music\Happy
+   - music\Sad
+   - music\Energetic
+   - music\Calm
+
+2. Add at least 1-2 songs to the "Happy" folder (most important for mood-changing!)
+
+3. Restart the app
+
+4. The app will automatically load all songs from the folders
+
+
+WHERE TO GET FREE MUSIC:
+------------------------
+- YouTube (download as MP3 - check copyright)
+- Free Music Archive (freemusicarchive.org)
+- Incompetech (incompetech.com) - Royalty-free
+- Bensound (bensound.com) - Free with attribution
+- Freesound (freesound.org) - Sound effects and music
+
+
+CURRENT PLAYLIST STATUS:
+------------------------
+Check the app sidebar under "📁 Playlist Info" to see how many songs
+are loaded in each emotion folder.
+
+================================================================================
+
